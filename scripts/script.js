@@ -1,13 +1,13 @@
-function invoiceApp() {
-    const appBody = document.createElement('div')
-    appBody.classList.add('card')
+function invoiceCard() {
+    const cardBody = document.createElement('div')
+    cardBody.classList.add('card')
 
-    const appHeader = document.createElement('div')
-    appHeader.classList.add('header-rectangle')
+    const cardHeader = document.createElement('div')
+    cardHeader.classList.add('header-rectangle')
 
-    document.body.insertAdjacentElement('afterbegin', appBody)
+    document.body.insertAdjacentElement('afterbegin', cardBody)
 
-    appBody.appendChild(appHeader)
+    cardBody.appendChild(cardHeader)
 }
 
-document.body.onload = invoiceApp()
+document.body.onload = invoiceCard()
