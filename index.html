@@ -8,8 +8,27 @@
         <title>Invoice Creator</title>
     </head>
     <body>
-        <div class="card">
-            <div class="card-header"></div>
+        <div id="card">
+            <div id="card-header"></div>
+
+            <div id="buttons-group">
+                <button>Wash Car</button>
+                <button>Mow Lawn</button>
+                <button>Pull Weeds</button>
+            </div>
+
+            <div id="tasks-container">
+                <div id="tasks"></div>
+
+                <div id="tasks-footer">
+                    <div id="notes"></div>
+                    <div id="total"></div>
+                </div>
+
+                <button id="send-invoice" type="submit">Send Invoice</button>
+
+                <!-- <button id="send-invoice">Send Invoice</button> -->
+            </div>
         </div>
         <script src="scripts/script.js"></script>
     </body>

@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.card {
+#card {
     width: 550px;
     height: 719px;
     margin: auto;
@@ -12,7 +12,13 @@
     background: #1f2937;
 }
 
-.card-header {
+#card-header {
     height: 190px;
     background: #3a69d2;
+}
+
+#buttons-group {
+    width: 473px;
+    height: 43px;
+    margin: 40px;
 }
