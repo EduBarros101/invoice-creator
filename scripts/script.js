@@ -1,13 +1,13 @@
-function invoiceCard() {
-    const cardBody = document.createElement('div')
-    cardBody.classList.add('card')
+// function invoiceCard() {
+//     const cardBody = document.createElement('div')
+//     cardBody.classList.add('card')
 
-    const cardHeader = document.createElement('div')
-    cardHeader.classList.add('header-rectangle')
+//     const cardHeader = document.createElement('div')
+//     cardHeader.classList.add('card-header')
 
-    document.body.insertAdjacentElement('afterbegin', cardBody)
+//     document.body.insertAdjacentElement('afterbegin', cardBody)
 
-    cardBody.appendChild(cardHeader)
-}
+//     cardBody.appendChild(cardHeader)
+// }
 
-document.body.onload = invoiceCard()
+// document.body.onload = invoiceCard()
