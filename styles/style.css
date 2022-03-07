@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card {
+    width: 550px;
+    height: 719px;
+    margin: auto;
+
+    background: #1f2937;
+}
+
+.header-rectangle {
+    height: 190px;
+    background: #3a69d2;
+}
