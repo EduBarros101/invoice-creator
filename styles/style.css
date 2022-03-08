@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    font-family: 'Inter', sans-serif;
 }
 
 #card {
@@ -13,8 +15,25 @@
 }
 
 #card-header {
+    display: flex;
     height: 190px;
     background: #3a69d2;
+}
+
+#card-title {
+    display: grid;
+    margin: auto;
+    gap: 9px;
+
+    text-align: center;
+
+    color: #ffffff;
+}
+
+#card-title h1 {
+    font-weight: 800;
+    font-size: 40px;
+    letter-spacing: -0.02em;
 }
 
 #tasks-container {
