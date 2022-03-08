@@ -17,8 +17,11 @@
     background: #3a69d2;
 }
 
-#buttons-group {
+#tasks-container {
+    margin: 40px;
+}
+
+#tasks-buttons {
     width: 473px;
     height: 43px;
-    margin: 40px;
 }
