@@ -37,10 +37,26 @@
 }
 
 #tasks-container {
+    display: flex;
+    flex-direction: column;
     margin: 40px;
 }
 
-#tasks-buttons {
-    width: 473px;
-    height: 43px;
+#tasks-buttons-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#tasks-buttons-container button {
+    width: 143px;
+    height: 45px;
+
+    font-size: 14px;
+
+    background: #d1d4f4;
+    color: #4a4e74;
+
+    border: 1px solid #d5d4d8;
+    border-radius: 7px;
+    border-style: none;
 }
