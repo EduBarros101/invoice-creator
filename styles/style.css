@@ -66,3 +66,14 @@
     border-radius: 7px;
     border-style: none;
 }
+
+#send-invoice {
+    height: 44px;
+    border: none;
+    border-radius: 7px;
+
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    background: #3a69d2;
+}
