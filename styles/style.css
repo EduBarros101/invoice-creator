@@ -7,6 +7,9 @@
 }
 
 #card {
+    display: flex;
+    flex-direction: column;
+
     width: 550px;
     height: 719px;
     margin: auto;
@@ -39,7 +42,10 @@
 #tasks-container {
     display: flex;
     flex-direction: column;
-    margin: 40px;
+    justify-content: space-between;
+
+    padding: 40px;
+    height: 100%;
 }
 
 #tasks-buttons-container {
