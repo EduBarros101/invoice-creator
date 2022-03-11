@@ -67,6 +67,17 @@
     border-style: none;
 }
 
+#tasks-bar {
+    display: flex;
+    justify-content: space-between;
+}
+
+#tasks-bar > p {
+    font-size: 12px;
+    font-weight: 700;
+    color: #d5d4d8;
+}
+
 #send-invoice {
     height: 44px;
     border: none;
