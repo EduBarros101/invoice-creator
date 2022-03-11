@@ -42,9 +42,17 @@
 #tasks-container {
     display: flex;
     flex-direction: column;
+    gap: 40px;
     justify-content: space-between;
 
     padding: 40px;
+    height: 100%;
+}
+
+#tasks-body {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
     height: 100%;
 }
 
