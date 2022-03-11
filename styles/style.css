@@ -77,3 +77,7 @@
     color: #ffffff;
     background: #3a69d2;
 }
+
+#send-invoice img {
+    margin: 0 14px 0 0;
+}
