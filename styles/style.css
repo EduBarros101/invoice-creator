@@ -80,12 +80,16 @@
     font-weight: bold;
 }
 
-#tasks-bar {
+#tasks-ordered {
+    height: 100%;
+}
+
+#tasks-ordered-bar {
     display: flex;
     justify-content: space-between;
 }
 
-#tasks-bar > p {
+#tasks-ordered-bar > p {
     font-size: 12px;
     font-weight: 700;
     color: #d5d4d8;
