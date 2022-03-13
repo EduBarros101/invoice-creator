@@ -75,6 +75,11 @@
     border-style: none;
 }
 
+#tasks-buttons-container > button:hover {
+    border: 2px solid #ffffff;
+    font-weight: bold;
+}
+
 #tasks-bar {
     display: flex;
     justify-content: space-between;
@@ -116,6 +121,10 @@
     font-weight: 500;
     color: #ffffff;
     background: #3a69d2;
+}
+
+#send-invoice:hover {
+    font-weight: bold;
 }
 
 #send-invoice img {
