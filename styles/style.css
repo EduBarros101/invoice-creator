@@ -86,6 +86,27 @@
     color: #d5d4d8;
 }
 
+#tasks-footer {
+    display: flex;
+    justify-content: space-between;
+
+    font-weight: 600;
+    font-size: 12px;
+    color: #d5d4d8;
+
+    padding-top: 15px;
+
+    border-top: 2px solid #c3c6db;
+}
+
+#tasks-footer-notes > :nth-child(2) {
+    font-weight: 400;
+}
+
+#tasks-footer-total {
+    text-align: right;
+}
+
 #send-invoice {
     height: 44px;
     border: none;
