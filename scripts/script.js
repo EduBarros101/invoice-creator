@@ -1,19 +1,12 @@
-// =========================================================
+// Buttons
+const button1 = document.querySelector('#button1')
+const button2 = document.querySelector('#button2')
+const button3 = document.querySelector('#button3')
 
-// For the sake of testing and training, I had it done on JavaScript but, after talking to some people in the industrie, it seems that it should feel like an "over do" what I should simply accomplish on pure HTML and CSS.
+const button1Value = 10
+const button2Value = 20
+const button3Value = 30
 
-// function invoiceCard() {
-//     const cardBody = document.createElement('div')
-//     cardBody.classList.add('card')
-
-//     const cardHeader = document.createElement('div')
-//     cardHeader.classList.add('card-header')
-
-//     document.body.insertAdjacentElement('afterbegin', cardBody)
-
-//     cardBody.appendChild(cardHeader)
-// }
-
-// document.body.onload = invoiceCard()
-
-// =========================================================
+button1.textContent = `Wash Car: $${button1Value}`
+button2.textContent = `Mow Lawn: $${button2Value}`
+button3.textContent = `Pull Weeds: $${button3Value}`
