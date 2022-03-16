@@ -83,7 +83,6 @@
 #tasks-ordered {
     display: flex;
     flex-direction: column;
-    /* TODO: Fix the gap properly */
     gap: 15px;
     height: 250px;
 }
