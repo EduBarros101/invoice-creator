@@ -92,14 +92,15 @@
     justify-content: space-between;
 }
 
-#tasks-ordered-bar > p {
+#tasks-ordered-bar > th {
     font-size: 12px;
     font-weight: 700;
     color: #d5d4d8;
 }
 
 #tasks-ordered-list {
-    height: 100%;
+    display: flex;
+    justify-content: space-between;
     overflow: auto;
 }
 
