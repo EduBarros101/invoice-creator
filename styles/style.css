@@ -101,7 +101,6 @@
 #tasks-ordered-list {
     display: flex;
     justify-content: space-between;
-    overflow: auto;
 }
 
 #tasks-footer {
