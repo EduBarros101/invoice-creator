@@ -83,8 +83,9 @@
 #tasks-ordered {
     display: flex;
     flex-direction: column;
-    gap: 15px;
     height: 250px;
+
+    overflow: auto;
 }
 
 #tasks-ordered-bar {
