@@ -88,6 +88,11 @@
     overflow: auto;
 }
 
+#tasks-ordered tbody tr {
+    display: flex;
+    justify-content: space-between;
+}
+
 #tasks-ordered-bar {
     display: flex;
     justify-content: space-between;
@@ -97,11 +102,6 @@
     font-size: 12px;
     font-weight: 700;
     color: #d5d4d8;
-}
-
-#tasks-ordered-list {
-    display: flex;
-    justify-content: space-between;
 }
 
 #tasks-footer {
