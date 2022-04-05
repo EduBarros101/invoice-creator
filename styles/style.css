@@ -99,33 +99,33 @@
     color: #d5d4d8;
 }
 
-#tasks-row {
+.tasks-row {
     display: flex;
     justify-content: space-between;
 }
 
-#tasks-row-item {
+.tasks-row-item {
     display: flex;
 }
 
-#tasks-row-item-name {
+.tasks-row-item-name {
     color: #f5f5f5;
     font-weight: 700;
     font-size: 20px;
 }
 
-#tasks-row-item-remove {
+.tasks-row-item-remove {
     color: #d5d4d8;
     font-size: 8px;
     font-weight: 400;
     padding: 5px;
 }
 
-#tasks-row-item-dollar {
+.tasks-row-item-dollar {
     color: #918e9b;
 }
 
-#tasks-row-item-value {
+.tasks-row-item-value {
     color: #d5d4d8;
     font-weight: 300;
     font-size: 24px;
