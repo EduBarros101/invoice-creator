@@ -106,6 +106,7 @@
 
 .tasks-row-item {
     display: flex;
+    gap: 15px;
 }
 
 .tasks-row-item-name {
@@ -118,17 +119,26 @@
     color: #d5d4d8;
     font-size: 8px;
     font-weight: 400;
-    padding: 5px;
+
+    align-self: flex-start;
+
+    border: none;
+    cursor: pointer;
+    background: none;
 }
 
-.tasks-row-item-dollar {
+.tasks-row-value {
+    display: flex;
+    font-weight: 300;
+    font-size: 24px;
+}
+
+.tasks-row-value-sign {
     color: #918e9b;
 }
 
-.tasks-row-item-value {
+.tasks-row-value-item {
     color: #d5d4d8;
-    font-weight: 300;
-    font-size: 24px;
 }
 
 #tasks-footer {
