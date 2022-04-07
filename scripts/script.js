@@ -34,63 +34,83 @@ button01Element.textContent = `${buttons[0].name}: $${buttons[0].value}`
 button02Element.textContent = `${buttons[1].name}: $${buttons[1].value}`
 button03Element.textContent = `${buttons[2].name}: $${buttons[2].value}`
 
-button01Element.addEventListener('click', () => {
-    tasksOrdered.innerHTML += `
-    <tr id="tasks-ordered-list">
-        <td id="task${taskId}-ordered">${buttons[0].name}</td>
-        <td id="task${taskId}-value">${buttons[0].value}</td>
-    </tr>
-    `
+// Testing new ways for the buttons ====================================
 
-    console.log('button 1')
+function createTasksRow(name, value) {
+    let tasksRow = document.createElement('div')
+    tasksRow.setAttribute('class', 'tasks-row')
+    let tasksRowItem = document.createElement('div')
+    tasksRowItem.setAttribute('class', 'tasks-row-item')
+    let tasksRowItemName = document.createElement('div')
+    tasksRowItemName.setAttribute('class', 'tasks-row-item-name')
+    let tasksRowItemRemove = document.createElement('button')
+    tasksRowItemRemove.setAttribute('class', 'tasks-row-item-remove')
+
+    let tasksRowValue = document.createElement('div')
+    tasksRowValue.setAttribute('class', 'tasks-row-value')
+
+    let tasksRowValueSign = document.createElement('div')
+    tasksRowValueSign.setAttribute('class', 'tasks-row-value-sign')
+    let tasksRowValueItem = document.createElement('div')
+    tasksRowValueItem.setAttribute('class', 'tasks-row-value-item')
+
+    tasksOrdered.appendChild(tasksRow)
+
+    tasksRow.appendChild(tasksRowItem)
+    tasksRowItem.appendChild(tasksRowItemName)
+    tasksRowItem.appendChild(tasksRowItemRemove)
+
+    tasksRow.appendChild(tasksRowValue)
+    tasksRowValue.appendChild(tasksRowValueSign)
+    tasksRowValue.appendChild(tasksRowValueItem)
+
+    // Gotta use params?
+    tasksRowItemName.innerText = name
+    tasksRowItemRemove.innerText = 'Remove'
+    tasksRowValueItem.innerText = value
+    tasksRowValueSign.innerText = '$'
+}
+
+button01Element.addEventListener('click', () => {
+    let name = buttons[0].name
+    let value = buttons[0].value
+
+    createTasksRow(name, value)
 
     taskTotal += buttons[0].value
-    totalMessage = `The total is: ${taskTotal}. It's ID was: ${taskId}.`
+    totalMessage = `The total is: ${taskTotal}.`
 
+    console.log('button 1')
     console.log(totalMessage)
-
-    taskId += 1
 })
 
 button02Element.addEventListener('click', () => {
-    tasksOrdered.innerHTML += `
-    <tr id="tasks-ordered-list">
-        <td id="task${taskId}-ordered">${buttons[1].name}</td>
-        <td id="task${taskId}-value">${buttons[1].value}</td>
-    </tr>
-    `
+    let name = buttons[1].name
+    let value = buttons[1].value
 
-    console.log('button 2')
+    createTasksRow(name, value)
 
     taskTotal += buttons[1].value
-    totalMessage = `The total is: ${taskTotal}. It's ID was: ${taskId}.`
+    totalMessage = `The total is: ${taskTotal}.`
 
+    console.log('button 2')
     console.log(totalMessage)
-
-    taskId += 1
 })
 
 button03Element.addEventListener('click', () => {
-    tasksOrdered.innerHTML += `
-    <tr id="tasks-ordered-list">
-        <td id="task${taskId}-ordered">${buttons[2].name}</td>
-        <td id="task${taskId}-value">${buttons[2].value}</td>
-    </tr>
-    `
+    let name = buttons[2].name
+    let value = buttons[2].value
 
-    console.log('button 3')
+    createTasksRow(name, value)
 
     taskTotal += buttons[2].value
-    totalMessage = `The totalis: ${taskTotal}. It's ID was: ${taskId}.`
+    totalMessage = `The totalis: ${taskTotal}.`
 
+    console.log('button 3')
     console.log(totalMessage)
-
-    taskId += 1
 })
 
-// const taskValue = document.querySelector('#task-value')
-// const allTaskValue = document.querySelectorAll('#task-value')
-
 sendInvoice.addEventListener('click', () => {
+    // TODO: Those were only tests! DELETE AND REDO!
     console.log('Invoice Sent!')
 })
